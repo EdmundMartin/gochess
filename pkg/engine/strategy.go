@@ -62,7 +62,7 @@ func reverseArray(boardArray [64]int) [64]int {
 	var revBoard [64]int
 	count := 0
 	for i := 63; i >= 0; i-- {
-		revBoard[count] = i
+		revBoard[count] = boardArray[i]
 		count++
 	}
 	return revBoard
